@@ -1,30 +1,26 @@
 import ParticleBackground from "./components/particleBg";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/home';
 import Info from './utils/userInfo';
 
 function App() {
     return ( <
-            Router >
+            Router basename = "/portfolio" >
             <
             ParticleBackground > < /ParticleBackground> <
             div > Navbar < /div> <
             Routes >
             <
-            Route path = '/portfolio'
+            Route path = '/'
             element = { < Home / > } > < /Route> <
-            Route path = '/portfolio/abcd'
+            Route path = '*'
             element = {
-                ( < div > 123 No Page exists... < /div>)}></Route >
-                    <
-                    Route path = '*'
-                    element = {
-                        ( < div > No Page exists... < /div>)}> <
-                            /Route> <
-                            /Routes> <
-                            /Router>
-                        )
-                    }
+                ( < div > No Page exists... < /div>)}> <
+                    /Route> <
+                    /Routes> <
+                    /Router>
+                )
+            }
 
-                    export default App;
+            export default App;
