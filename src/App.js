@@ -1,12 +1,12 @@
 import ParticleBackground from "./components/particleBg";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/home';
 import Info from './utils/userInfo';
 
 function App() {
     return ( <
-            Router basename = "/portfolio" >
+            Router >
             <
             ParticleBackground > < /ParticleBackground> <
             div > Navbar < /div> <
