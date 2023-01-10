@@ -1,5 +1,5 @@
 import ParticleBackground from "./components/particleBg";
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/home';
 import Info from './utils/userInfo';
@@ -12,15 +12,19 @@ function App() {
             div > Navbar < /div> <
             Routes >
             <
-            Route path = '/'
+            Route path = '/portfolio'
             element = { < Home / > } > < /Route> <
-            Route path = '*'
+            Route path = '/portfolio/abcd'
             element = {
-                ( < div > No Page exists... < /div>)}> <
-                    /Route> <
-                    /Routes> <
-                    /Router>
-                )
-            }
+                ( < div > 123 No Page exists... < /div>)}></Route >
+                    <
+                    Route path = '*'
+                    element = {
+                        ( < div > No Page exists... < /div>)}> <
+                            /Route> <
+                            /Routes> <
+                            /Router>
+                        )
+                    }
 
-            export default App;
+                    export default App;
