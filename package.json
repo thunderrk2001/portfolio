@@ -17,7 +17,7 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "predeploy": "npm run build",
+        "predeploy": "npm run winBuild",
         "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "GENERATE_SOURCEMAP=false react-scripts build",
