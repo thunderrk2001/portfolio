@@ -9,7 +9,6 @@ function App() {
             Router basename = "/portfolio" >
             <
             ParticleBackground > < /ParticleBackground> <
-            div > Navbar < /div> <
             Routes >
             <
             Route path = '/'
