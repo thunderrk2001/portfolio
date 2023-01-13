@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/home';
 import Info from './utils/userInfo';
+import Navbar from "./components/navbar";
 
 function App() {
     return ( <
             Router basename = "/portfolio" >
             <
+            Navbar > < /Navbar> <
             ParticleBackground > < /ParticleBackground> <
             Routes >
             <
