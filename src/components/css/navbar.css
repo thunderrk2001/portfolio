@@ -1,9 +1,9 @@
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     display: block;
-    width: 100%;
+    width: 97.8%;
     height: 5%;
     overflow: hidden;
     background: #0e1d35;
@@ -16,7 +16,7 @@
 }
 
 .navbar-mobile {
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     display: block;

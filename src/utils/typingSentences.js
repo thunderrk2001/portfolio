@@ -1,7 +1,7 @@
 const list = [
-    "Hey I'm Ritik Kumar.",
-    "Some Pages will be added soon.",
-    "I am Full stack developer."
+    "I am Full stack developer.",
+    "Some Pages will be added soon."
+
 
 ];
 export default list;

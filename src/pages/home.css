@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.Home-center {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* */
+    height: 100vh;
+}
+
+.Home-center .title {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.Home-center .links {
+    width: auto;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+
+.Home-center .links a {
+    border-radius: 0.4rem;
+    text-decoration: none;
+    margin-right: 0.7rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.4rem;
+}
+
+.Home-center .links a:nth-child(1) {
+    background-color: black;
+}
+
+.Home-center .links a:nth-child(2) {
+    color: black;
+    background-color: #ffae1a;
+}
+
+.Home-center .links a:nth-child(3) {
+    color: darkblue;
+    background-color: white;
+}
+
+.Home-center #resume-btn {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    margin-top: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #0e1d35;
+    font-weight: bold;
+}
+
+#project {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 390px;
+    height: 454px;
+    perspective: 1000px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width:1200px) {
+    .flip-card {
+        width: 250px;
+        height: 280px;
+    }
+    #project {
+    margin-top: 20px;
+}
+
+}
+
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid #0e1d35;
+    border-radius: 1rem;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+.flip-card-front {
+     background: linear-gradient(120deg, #0e1d35 30%, #15253f 88%, #2b3d5b 78%);
+    color: white;
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, #2b3d5b 60%, 88%, #15253f 40%, #0e1d35 48%);
+
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+
+
+.my-card {
+  overflow: visible;
+  position: relative;
+  width: 210px;
+  height: 254px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.my-card:before,
+.my-card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.5s;
+  z-index: -99;
+}
+
+.my-details {
+  position: absolute;
+  left: -10px;
+  right: 0;
+  bottom: 5px;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*Image*/
+.imgbox {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.img {
+  background: #4158D0;
+  background-image: url('./myImage.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Text*/
+.my-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #777;
+}
+
+.my-caption {
+  font-weight: 500;
+  font-size: 16px;
+  color: #4158D0;
+  display: block;
+  margin-top: 0px;
+}
+
+/*Hover*/
+.my-card:hover .imgbox {
+  bottom: 80px;
+}
+
+.my-card:hover:before {
+  transform: rotate(20deg);
+}
+
+.my-card:hover:after {
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}

@@ -29,8 +29,8 @@ const Navbar = () => {
         <
         span className = "line-3" / >
         <
-        /div> <
-        /div>
+        /div> < /
+        div >
 
         <
         /div>
@@ -46,8 +46,8 @@ const Navbar = () => {
         <
         li > < a href = '/' > Experience < /a></li >
         <
-        /ul> <
-        /div> <
+        /ul> < /
+        div > <
         /div>
     )
 
