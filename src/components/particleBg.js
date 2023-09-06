@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import particle_config from "./config/particle-config";
-const ParticleBackground=()=>{
+const ParticleBackground = () => {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -14,13 +14,13 @@ const ParticleBackground=()=>{
     const particlesLoaded = useCallback(async container => {
         await console.log(container);
     }, []);
-return(
-    <Particles
-           id="tsparticles"
+    return (
+        <Particles
+            id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={particle_config}
-    ></Particles>
-)
+        ></Particles>
+    )
 }
 export default ParticleBackground;

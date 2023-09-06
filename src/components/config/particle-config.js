@@ -1,8 +1,8 @@
-const particle_config_options={
-  fullScreen:{
-    enable:true,
-    zIndex:-1
-  },
+const particle_config_options = {
+    fullScreen: {
+        enable: true,
+        zIndex: -1
+    },
     background: {
         color: {
             value: "#0d47a1",

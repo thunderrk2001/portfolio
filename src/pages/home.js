@@ -85,7 +85,7 @@ function Home() {
                         </div>
                         <div className="flip-card-back">
                             <p >A web app where users can post quality articles which helps other students to find content related to any knowledgeable stuff.
-                            Some of  features such as rate limiting,debouncing call and pagination is done.
+                                Some of  features such as rate limiting,debouncing call and pagination is done.
                             </p>
                             <a href="https://github.com/thunderrk2001/articlo2.0" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -117,7 +117,7 @@ function Home() {
                 </div>
             </div>
 
-            </div>
+        </div>
 
     );
 }

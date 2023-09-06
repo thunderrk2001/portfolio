@@ -6,22 +6,21 @@ import Info from './utils/userInfo';
 import Navbar from "./components/navbar";
 
 function App() {
-    return ( <
-            Router basename = "/portfolio" >
-            <
-            Navbar > < /Navbar> <
-            ParticleBackground > < /ParticleBackground> <
-            Routes >
-            <
-            Route path = '/'
-            element = { < Home / > } > < /Route> <
-            Route path = '*'
-            element = {
-                ( < div > No Page exists... < /div>)}> <
-                    /Route> <
-                    /Routes> <
-                    /Router>
-                )
-            }
+    return (
+        <Router basename="/portfolio" >
+            <Navbar> </Navbar>
+            <ParticleBackground></ParticleBackground>
+            <Routes>
+                <Route path='/' element={< Home />} > </Route>
+                <Route path='*'
+                    element={
+                        (< div > No Page exists... </div>)
+                    }
+                >
+                </Route>
+            </Routes>
+        </Router>
+    )
+}
 
-            export default App;
+export default App;
