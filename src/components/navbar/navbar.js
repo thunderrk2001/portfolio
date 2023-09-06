@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './css/navbar.css';
+import './navbar.css';
 const Navbar = () => {
     const [navStyle, setNavStyle] = useState('navbar');
 
@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className='menu'>
             <ul>
                 <li> <a href='#project' > Projects </a></li>
-                <li> <a href='/' > Skills </a></li>
+                <li> <a href='#skills' > Skills </a></li>
                 <li> <a href='/' > Experience </a></li>
             </ul>
         </div>
