@@ -1,0 +1,32 @@
+{
+    "tooltip": {
+        "formatter": "{b} : {c}%"
+    },
+    "series": [
+        {
+            "name": "c++",
+            "type": "gauge",
+            "progress": {
+                "show": true
+            },
+            "detail": {
+                "valueAnimation": true,
+                "formatter": "{value}",
+                "fontSize": 30,
+                "color": "white"
+            },
+            "title": {
+                "textStyle": {
+                    "color": "white",
+                    "fontSize": 30
+                }
+            },
+            "data": [
+                {
+                    "value": 30,
+                    "name": "C++"
+                }
+            ]
+        }
+    ]
+}
