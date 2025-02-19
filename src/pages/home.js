@@ -51,7 +51,7 @@ function Home() {
                 <a
                     id="resume-btn"
                     rel="noreferrer"
-                    href="https://drive.google.com/file/d/1SG5spjmLcaJGaCd3-GuVeHk3gjr3HUAr/view"
+                    href="https://drive.google.com/file/d/10ufnfcz1xkmmteswi4QPROhPmlGXOZSB/view?usp=sharing"
                     target="_blank"
                 >
                     {" "}
